@@ -11,4 +11,8 @@ Set the Network like this in the Setting:
   <img width="701" height="556" alt="image" src="https://github.com/user-attachments/assets/c3a55743-fbe4-4f73-85d5-84213c125229" />
   
 # Refbox-Bridge IP config
+1. Open the terminal (Ctrl + Alt + T) then type:
+```bash
+ifconfig enp0s3
 
+2. 
