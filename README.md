@@ -14,5 +14,5 @@ Set the Network like this in the Setting:
 1. Open the terminal (Ctrl + Alt + T) then type:
 ```bash
 ifconfig enp0s3
-
+```
 2. 
