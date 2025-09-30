@@ -1,4 +1,14 @@
-# ROS2/colcon
+# .gitattributes with LF
+cat > .gitattributes <<'EOF'
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+EOF
+
+# .gitignore with LF
+cat > .gitignore <<'EOF'
+# ROS 2/colcon
 build/
 install/
 log/
@@ -6,10 +16,20 @@ log/
 **/install/
 **/log/
 
-# Python / misc
+# Editors & OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
-*.pdb
-*.obj
+
+# C/C++
 *.o
+*.obj
+*.pdb
+EOF
