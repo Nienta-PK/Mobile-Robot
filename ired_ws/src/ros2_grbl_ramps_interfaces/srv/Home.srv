@@ -1,0 +1,6 @@
+bool home_x
+bool home_y
+bool home_z
+---
+bool ok
+string reply

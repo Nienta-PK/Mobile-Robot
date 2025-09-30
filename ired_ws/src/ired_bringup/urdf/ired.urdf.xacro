@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<robot name="iRED Robot">
+    <!-- link -->
+    <link name="base_footprint"/>
+    <link name="base_link"/>
+    <link name="wheel_left_link"/>
+    <link name="wheel_right_link"/>
+    <link name="base_scan"/>
+    <link name="imu_link"/>
+    
+    <!-- joint -->
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0.0 0.0 0.079" rpy="0.0 0.0 0.0"/>
+    </joint>
+    <joint name="imu_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="imu_link"/>
+        <origin xyz="-0.075 0.0 0.016" rpy="0.0 0.0 0.0"/>
+    </joint>
+    <joint name="scan_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_scan"/>
+        <origin xyz="0.081 0.0 0.048" rpy="0.0 0.0 3.14159265359"/>
+    </joint>
+    <joint name="wheel_right_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="wheel_right_link"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0.0 -0.106 -0.047" rpy="-1.57 0.0 0.0"/>
+    </joint>
+    <joint name="wheel_left_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="wheel_left_link"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0.0 0.106 -0.047" rpy="-1.57 0.0 0.0"/>
+    </joint>
+    <joint name="camera_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="wheel_left_link"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0.0 0.106 -0.047" rpy="-1.57 0.0 0.0"/>
+    </joint>
+
+
+</robot>

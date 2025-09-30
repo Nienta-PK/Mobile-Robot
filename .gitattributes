@@ -1,0 +1,10 @@
+# Normalize text files to LF in the repo
+* text=auto eol=lf
+
+# If you truly need CRLF for specific files, list them explicitly:
+# *.bat text eol=crlf
+
+# Always treat these as binary
+*.png binary
+*.jpg binary
+*.pdf binary

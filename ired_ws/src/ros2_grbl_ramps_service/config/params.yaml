@@ -1,0 +1,18 @@
+ros2_grbl_ramps_service:
+  ros__parameters:
+    port: "/dev/ttyUSB0"
+    baud: 115200
+    enable_polling: true
+    status_hz: 5.0
+    startup_gcode: ["$X"]
+
+    publish_joint_states: true
+    joint_names: ["joint_x","joint_y","joint_z"]
+    frame_id: "base_link"
+
+    zero_is_machine_zero: true
+    steps_per_mm: [80.0, 80.0, 400.0]
+    mm_per_rev: [1.0, 1.0, 1.0]
+
+    log_rx_lines: false
+    qos_reliability: "best_effort"   # set to "reliable" if you prefer default ros2 echo

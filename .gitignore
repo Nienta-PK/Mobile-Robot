@@ -1,0 +1,15 @@
+# ROS2/colcon
+build/
+install/
+log/
+**/build/
+**/install/
+**/log/
+
+# Python / misc
+__pycache__/
+*.pyc
+*.pyo
+*.pdb
+*.obj
+*.o
